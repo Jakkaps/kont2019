@@ -48,6 +48,22 @@ BikeRental-klassen skal utvides til å støtte forlengelse av leie, beregning av
 
 - Gjør nødvendige endringer av rentBike- og returnBike-metodene i BikeRental, iht. de nye kravene nevnt over, og skriv i tillegg extendRental-metoden. Baser deg på en pris på 10 kr. pr. påbegynte time (som over), 5 kr. pr. forlengelse og 10 kr. pr. for sen forlengelse eller tilbakelevering.
 
-## Del 3 - Fleksibel beregning av pris
+## Del 2 - Fleksibel beregning av pris
 
-## Mobil-app
+Det er ønskelig å gjøre håndtering av pris fleksibel, så endringer i liten (eller ingen) grad krever endringer i koden. F.eks. kan det være aktuelt å introdusere abonnement, kortvarige kampanjer og/eller ulike typer fremkomstmidler med egne priser. Koden bør dermed gjøres mer fleksibel.
+
+Velg én eller flere av disse mulighetene, og realiser en løsning som gir en ryddig programstruktur. Du står fritt i utforming av løsningen, men husk at hensikten er å vise at du kan trekke inn en eller flere relevante og mer avanserte teknikker. Du blir ikke vurderte ut fra mengden kode, men god og fornuftig bruk av teknikkene.
+
+## Del 3 - Mobil-app
+
+Det skal lages en mobil-app for utleietjenesten og i første omgang fokuseres det på beregning av pris. Man skal kunne angi uthentings
+
+
+Under ser du et utkast til en mobil-app for sykkelutleietjenesten, basert på FXML. Kartet viser hvor det er sykler, og én stasjon er valgt (og implisitt også en sykkel på stasjonen). Brukeren kan endre antatt tidspunkt for tilbakelevering ved å endre teksten i tekstfeltet eller bruke knappene til høyre for feltet.
+
+![App-utkast](bike-app.png)
+
+Prototypen er laget vha. FXML og noe Java, og nå er det din jobb å fullføre den!
+
+- Legg først til de Java-elementene (klasser, felt og metoder) må finnes i koden som implementerer oppførselen (logikken) til appen
+- Skriv koden som er nødvendig for å vise frem prisen, når tilsvarende knapp trykkes!
