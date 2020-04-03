@@ -6,6 +6,8 @@ Det deles ut en god del kode, noe skal bare forstås og noe skal bygges videre p
 
 Oppgaven er del i to hoveddeler, den første er mange mindre småoppgaver som kan løses nokså uavhengig av hverandre, den andre er basert på caset fra 2019-konten.
 
+Koden skal leveres _samlet_, ved at koden som er delt ut skal jobbes videre med, og til slutt pakkes i en zip-fil, som lastes opp. Hvis dere trenger kopi av originalkoden, så må dere ta den selv og legge den utenfor dette kodingsprosjektet.
+
 ## Del 1 - småplukk
 
 Denne delen er ment å teste veldig spesifikke ferdigheter. Oppgavene har varierende vanskelighetsgrad, men hver oppgave er nokså liten og skal ikke ta mange minuttene, om en vet hva en skal gjøre. Hvis en merker at en bruker mer tid, så kan det være lurt å bare gå videre.
