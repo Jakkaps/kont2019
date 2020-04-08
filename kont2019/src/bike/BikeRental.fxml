@@ -9,7 +9,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="kont2019.bike.BikeRentalController">
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="bike.BikeRentalController">
 	<ImageView>
 		<image>
 			<Image url="@bikemap.png"/>
@@ -27,5 +27,8 @@
 			<Button onAction="#minus1HourAction" text="- 1 hour"/>
 		</VBox>
 	</HBox>
-	<Button onAction="#rentAction" text="Rent"/>
+	<HBox>
+		<Button onAction="#calculatePriceAction" text="Calculate price"/>
+		<Label text="&lt;here calculated price should appear&gt;"/>
+	</HBox>
 </VBox>

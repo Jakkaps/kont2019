@@ -56,14 +56,13 @@ Velg én eller flere av disse mulighetene, og realiser en løsning som gir en ry
 
 ## Del 3 - Mobil-app
 
-Det skal lages en mobil-app for utleietjenesten og i første omgang fokuseres det på beregning av pris. Man skal kunne angi uthentings
-
+Det skal lages en mobil-app for utleietjenesten og i første omgang fokuseres det på beregning av pris. Man skal kunne angi uthentings- og innleveringstidspunkt og få beregnet prisen.
 
 Under ser du et utkast til en mobil-app for sykkelutleietjenesten, basert på FXML. Kartet viser hvor det er sykler, og én stasjon er valgt (og implisitt også en sykkel på stasjonen). Brukeren kan endre antatt tidspunkt for tilbakelevering ved å endre teksten i tekstfeltet eller bruke knappene til høyre for feltet.
 
-![App-utkast](bike-app.png)
+<img src="bike-rental-app.png" width="500"/>
 
 Prototypen er laget vha. FXML og noe Java, og nå er det din jobb å fullføre den!
 
-- Legg først til de Java-elementene (klasser, felt og metoder) må finnes i koden som implementerer oppførselen (logikken) til appen
+- Legg først til de Java-elementene (klasser, felt og metoder) som må finnes i koden som implementerer oppførselen (logikken) til appen
 - Skriv koden som er nødvendig for å vise frem prisen, når tilsvarende knapp trykkes!

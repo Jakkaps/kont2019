@@ -75,7 +75,7 @@ public class BikeRentalController {
 	}
 
 	@FXML
-	public void rentAction() {
-		bikeRental.rentBike(me, bike, toLocalDateTime(getFromTime()) , toLocalDateTime(getToTime()));
+	public void calculatePriceAction() {
+
 	}
 }
