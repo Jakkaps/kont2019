@@ -20,24 +20,11 @@ public class EverySecondMetaIteratorTest {
 
 	@Test
 	public void testThatIdentifiesACaseWhereTheCodeFails() {
-		final EverySecondMetaIterator metaIterator = new EverySecondMetaIterator(Arrays.asList("1", "2", "3").iterator());
-		Assert.assertTrue(metaIterator.hasNext());
-		Assert.assertEquals("1", metaIterator.next());
-		Assert.assertTrue(metaIterator.hasNext());
-		Assert.assertEquals("3", metaIterator.next());
-		Assert.assertFalse(metaIterator.hasNext());
+		// TODO
 	}
 
 	@Test
 	public void testThatIdentifiesTheFundamentalBug() {
-		final EverySecondMetaIterator metaIterator = new EverySecondMetaIterator(Arrays.asList("1", "2", "3", "4").iterator());
-		Assert.assertTrue(metaIterator.hasNext());
-		Assert.assertTrue(metaIterator.hasNext());
-		Assert.assertEquals("1", metaIterator.next());
-		Assert.assertTrue(metaIterator.hasNext());
-		Assert.assertTrue(metaIterator.hasNext());
-		Assert.assertEquals("3", metaIterator.next());
-		Assert.assertFalse(metaIterator.hasNext());
-		Assert.assertFalse(metaIterator.hasNext());
+		// TODO
 	}
 }

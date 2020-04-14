@@ -24,7 +24,7 @@ public class GeoLocation {
 	 * @return distance to other Location
 	 */
 	public double distance(final GeoLocation other) {
-		return distance(latitude, longitude, other.latitude, other.longitude);
+		// TODO
 	}
 
 	/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/

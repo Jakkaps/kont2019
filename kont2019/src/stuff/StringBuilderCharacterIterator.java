@@ -4,23 +4,11 @@ import java.util.Iterator;
 
 public class StringBuilderCharacterIterator implements Iterator<Character> {
 
-	private final StringBuilder stringBuilder;
+	// TODO: necessary field declarations
 
 	public StringBuilderCharacterIterator(final StringBuilder stringBuilder) {
-		this.stringBuilder = stringBuilder;
+		// TODO: necessary initialisation
 	}
 
-	private int pos = 0;
-
-	@Override
-	public boolean hasNext() {
-		return pos < stringBuilder.length();
-	}
-
-	@Override
-	public Character next() {
-		final char c = stringBuilder.charAt(pos);
-		pos++;
-		return c;
-	}
+	// TODO: necessary methods
 }

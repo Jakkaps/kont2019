@@ -62,7 +62,7 @@ Under ser du et utkast til en mobil-app for sykkelutleietjenesten, basert på FX
 
 <img src="bike-rental-app.png" width="500"/>
 
-Prototypen er laget vha. FXML og noe Java, og nå er det din jobb å fullføre den!
+Prototypen er laget vha. FXML, se [BikeRental.fxml](BikeRental.fxml), og noe Java, se bl.a. [BikeRentalApp.java](BikeRentalApp.java), og nå er det din jobb å fullføre den!
 
 - Legg først til de Java-elementene (klasser, felt og metoder) som må finnes i koden som implementerer oppførselen (logikken) til appen
 - Skriv koden som er nødvendig for å vise frem prisen, når tilsvarende knapp trykkes!

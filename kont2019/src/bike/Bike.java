@@ -1,8 +1,5 @@
 package bike;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /*
  * @startuml
  * class Bike
@@ -12,38 +9,7 @@ import java.util.List;
  */
 public class Bike {
 
-	private GeoLocation location;
-	private Person renter;
+	// TODO: del 1, assosiasjoner
 
-	public GeoLocation getLocation() {
-		return location;
-	}
-
-	void setLocation(final GeoLocation location) {
-		this.location = location;
-	}
-
-	public Person getRenter() {
-		return renter;
-	}
-
-	void setRenter(final Person renter) {
-		this.renter = renter;
-	}
-
-	// for computing rental price
-
-	private final List<RentalInfo> rentals = new ArrayList<RentalInfo>();
-
-	void addRentalInfo(final RentalInfo rentalInfo) {
-		rentals.add(rentalInfo);
-	}
-
-	List<RentalInfo> getRentalInfos() {
-		return new ArrayList<RentalInfo>(rentals);
-	}
-
-	void clearRentalInfos() {
-		rentals.clear();
-	}
+	// TODO: del 1, registrering av leie
 }

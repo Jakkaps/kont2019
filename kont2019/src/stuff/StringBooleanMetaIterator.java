@@ -6,32 +6,13 @@ import java.util.Iterator;
 
 public class StringBooleanMetaIterator implements Iterator<String> {
 
-	private final Iterator<String> strings;
-	private final Iterator<Boolean> booleans;
+	// TODO: necessary field declarations
 
 	public StringBooleanMetaIterator(final Iterator<String> strings, final Iterator<Boolean> booleans) {
-		this.strings = strings;
-		this.booleans = booleans;
-		nextBoolean();
+		// TODO: necessary initialisation
 	}
 
-	@Override
-	public boolean hasNext() {
-		return strings.hasNext();
-	}
-
-	private void nextBoolean() {
-		while (booleans.hasNext() && (! booleans.next())) {
-			strings.next();
-		}
-	}
-
-	@Override
-	public String next() {
-		final String next = strings.next();
-		nextBoolean();
-		return next;
-	}
+	// TODO: necessary methods
 
 	public static void main(final String[] args) {
 		final Collection<String> strings = Arrays.asList("meta-iteratorer", "er", "ikke", "kult");
