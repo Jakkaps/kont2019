@@ -4,7 +4,7 @@
 
 ### StringBuilderCharacterIterator
 
-[StringBuilderCharacterIterator](StringBuilderCharacterIterator.java)-klassen skal implementere en iterator av tegnene (Character) inni en `StringBuilder`. `StringBuilder` er en `String`-aktig klasse med den (viktige) forskjellen at instanser kan endres etter opprettelsen.
+[StringBuilderCharacterIterator](StringBuilderCharacterIterator.java)-klassen skal implementere en iterator av tegnene (`Character`) inni en `StringBuilder`. Klassen `StringBuilder` er en `String`-aktig klasse med den (viktige) forskjellen at instanser kan endres etter opprettelsen.
 
 Klassen testes av StringBuilderCharacterIteratorTest.
 
@@ -18,9 +18,9 @@ Eksempel: Hvis den første iteratoren gir ut sekvensen `"meta-iteratorer", "er",
 
 Klassen testes av StringBooleanMetaIteratorTest.
 
-### EverySecondIterator og EverySecondIteratorTest
+### EverySecondMetaIterator og EverySecondMetaIteratorTest
 
-[EverySecondIterator](EverySecondIterator.java) er også en meta-iterator. Den tar inn en annen iterator og slipper gjennom _annenhvert_ element.
+[EverySecondMetaIterator](EverySecondMetaIterator.java) er også en meta-iterator. Den tar inn en annen iterator og slipper gjennom  _annenhvert_  element.
 
 Eksempel: Hvis iteratoren den tar inn gir ut `"1", "2", "3", "4"`, så skal EverySecondIterator-instansen selv gi ut `"1", "3"`. Dette er testet i både `main`-metoden og [EverySecondIteratorTest](EverySecondIteratorTest.java)-testklassen.
 
