@@ -102,7 +102,7 @@ public class BikeRental {
 	}
 
 	/**
-	 * @return the bikes that are close to a station (within 30m), but still are rented
+	 * @return the bikes that are close to a station (within 30 meters), but still are rented
 	 */
 	private Collection<Bike> getUnreturnedBikes() {
 		return getRentedBikes().stream().filter(bike -> getStationNearby(bike, 30.0) != null).collect(Collectors.toList());
