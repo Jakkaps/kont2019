@@ -12,7 +12,6 @@ Del 1 av oppgaven fokuserer på administrasjon av leieforholdet. Del 2 fokuserer
 
 Som nevnt i innledning til oppgavesettet skal all koden leveres samlet. Deloppgavene er laget som en hjelp til å ta én ting om gangen i en naturlig rekkefølge, men du bør se på det som en helhet. Der det legges opp til at dere skal kommentere valg dere gjør er det naturlig at dere legger inn dette som kommentarer i koden knyttet til metodene eller klassene dere skriver om. Videre er det lagt opp til at du kan (og skal) gjøre naturlige antakelser, men vi ber dere om å gjøre rede for dem. 
 
-## Bør vi gjøre ferdig Person litt mer? Hvis ikke bør vi si til dem at det må gjøres ting i del 1.
 ## Del 1 - GeoLocation-, Bike- og BikeRental-klassene
 
 Du skal i denne delen gjøre endringer i alle disse tre klassene.
@@ -25,7 +24,7 @@ BikeRental-klassen administrerer stasjonene, syklene og utleieforhold. Både sta
 
 **[Bike](Bike.java)**
 
-Bike-klassen skal ha assosiasjoner (koblinger) til Person- (se skjelettet) og GeoLocation-klassene iht. følgende klassediagram: _(NB Hallvard: I skjelettet refererer vi til Location, ikke GeoLocation)_
+Bike-klassen skal ha assosiasjoner (koblinger) til Person- (se skjelettet) og GeoLocation-klassene iht. følgende klassediagram:
 
 ![Klassediagram](part1.png)
 
@@ -37,7 +36,7 @@ Begge disse assosiasjonene er dynamiske, dvs. både location og renter (låntake
 
 [BikeRental](BikeRental.java) må holde oversikt over alle stasjonene, representert med [GeoLocation](GeoLocation.java), og alle syklene ([Bike](Bike.java)).
 
-- Skriv nødvendige variabel-deklarasjoner (felt) for dette og forklar hva som styrer valget av typer. Hvis du trenger metoder for å konfigurere systemet med stasjoner og sykler, f.eks. for testformål, så skriv gjerne slike, men det er ikke en del av oppgaven. Du vil også finne en main-metode med noen eksempler på stasjoner i Trondheim sentrum, bruk gjerne disse for å teste koden din.
+- Skriv nødvendige variabel-deklarasjoner (felt) for dette og forklar (i en kode-kommentar) hva som styrer valget av typer. Hvis du trenger metoder for å konfigurere systemet med stasjoner og sykler, f.eks. for testformål, så skriv gjerne slike, men det er ikke en del av oppgaven. Du vil også finne en `main`-metode med noen eksempler på stasjoner i Trondheim sentrum, bruk gjerne disse for å teste koden din.
 
 I første omgang kan du forenkle koden for leie og retur av sykler, ved å ikke ta hensyn til annet enn start- og slutt-tidspunkt for leieforholdet. Forlenging av leie skal derimot skje i slutten av denne delen. Assosiasjonen `renter` i [Bike](Bike.java) skal holde rede på hvem ([Person](Person.java)) som evt. leier en sykkel ([Bike](Bike.java)). Du bestemmer selv hvor/hvordan du vil representere når leieforholdet starter og når det forventes at sykkelen leveres tilbake. Det viktigste er at informasjonen kan brukes når sykkelen leveres og leien skal beregnes og betales.
 
@@ -77,4 +76,4 @@ Prototypen er laget vha. FXML, se [BikeRental.fxml](BikeRental.fxml), og noe Jav
 
 - Legg først til de Java-elementene (klasser, felt og metoder) som må finnes i koden som implementerer oppførselen (logikken) til appen
 - Skriv koden som er nødvendig for å vise frem prisen, når tilsvarende knapp trykkes!
-- Du skal _ikke_ implementere noe i forhold til kartet i seg selv. Dette er kun et bilde.
+- Du skal  _ikke_  implementere noe i forhold til kartet i seg selv. Dette er kun et bilde.

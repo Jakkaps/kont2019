@@ -35,7 +35,7 @@ public class BikeRental {
 	}
 
 	/**
-	 * @return the bikes that are close to a station (within 30m), but still are rented
+	 * @return the bikes that are close to a station (within 30 meters), but still are rented
 	 */
 	private Collection<Bike> getUnreturnedBikes() {
 		// TODO: del 1
@@ -77,9 +77,17 @@ public class BikeRental {
 	 * @param bike
 	 * @param now the time the bike is returned
 	 * @throws (some subclass of) RuntimeException if the bike isn't currently being rented by the person argument
-	 * @throws (some subclass of) RuntimeException if person isn't near (within 30m of) a station
+	 * @throws (some subclass of) RuntimeException if person isn't near (within 30 meters of) a station
 	 */
 	public void returnBike(final Person person, final Bike bike, final LocalDateTime now) {
 		// TODO: del 1
+	}
+
+	public static void main(final String[] args) {
+		// Some geo-locations to use in testing:
+		// In the hall outside F1: 63.416522, 10.403345
+		// By the entrance to Realfagsbygget closest to F1: 63.416017, 10.404729
+		// Another spot by the same entrance, closer than 30 meters: 63.416079, 10.404565
+		System.out.println(GeoLocation.distance(63.416017, 10.404729, 63.416079, 10.404565));
 	}
 }

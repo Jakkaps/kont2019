@@ -23,7 +23,7 @@ public class LambdaUtilities {
 	}
 
 	/**
-	 * Adds n elements from the provided supplier to col
+	 * Adds n elements from the provided supplier to col and returns it.
 	 * @param col
 	 * @param n
 	 * @param supplier
@@ -46,7 +46,7 @@ public class LambdaUtilities {
 	}
 
 	/**
-	 * Calls cons on all items in all elements
+	 * Calls cons on all items in elements
 	 * @param cons
 	 * @param elements
 	 */
@@ -56,11 +56,12 @@ public class LambdaUtilities {
 	}
 
 	/**
-	 * Sums the result of applying op to consecutive elements of nums1 and nums2
-	 * @param op
-	 * @param nums1
-	 * @param nums2
-	 * @return the sum of the result of applying op to consecutive elements of nums1 and nums2
+	 * Sums the result of applying the provided BinaryOperator op to pairs of consecutive elements of nums1 and nums2.
+	 * If one of the sequences is longer than the other, you should drop the remaining elements.
+	 * @param op the operator to apply on pairs of elements
+	 * @param nums1 first set of elements
+	 * @param nums2 second set of elements
+	 * @return the sum of the result of applying op to pairs of consecutive elements of nums1 and nums2
 	 */
 	public static double zip(final BinaryOperator<Double> op, final List<Double> nums1, final Collection<Double> nums2) {
 		// TODO
@@ -81,7 +82,7 @@ public class LambdaUtilities {
 		// 1
 		forEach(System.out::println, Arrays.asList("3", "2"), Arrays.asList("1"));
 
-		// Should print 13.0 (i.e. the sum of the products)
+		// Should print 13.0, i.e. the sum of the products
 		System.out.println(zip((n1, n2) -> n1 * n2, Arrays.asList(1.0, 2.5), Arrays.asList(3.0, 4.0)));
 	}
 }
