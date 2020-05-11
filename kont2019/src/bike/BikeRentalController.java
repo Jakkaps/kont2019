@@ -9,7 +9,7 @@ public class BikeRentalController {
 	private final BikeRental bikeRental;
 
 	public BikeRentalController() {
-		bikeRental = new BikeRental();
+		bikeRental = new BikeRental(null, null);
 		// TODO: initialise bikeRental
 	}
 

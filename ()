@@ -1,0 +1,39 @@
+Did first 3 exercises
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'github/master'.
+#
+# Changes to be committed:
+#	new file:   kont2019/.idea/.gitignore
+#	new file:   kont2019/.idea/compiler.xml
+#	new file:   kont2019/.idea/encodings.xml
+#	new file:   kont2019/.idea/google-java-format.xml
+#	new file:   kont2019/.idea/jarRepositories.xml
+#	new file:   kont2019/.idea/libraries/Maven__junit_junit_4_12.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_base_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_controls_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_fxml_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_graphics_13_0_1.xml
+#	new file:   kont2019/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_1.xml
+#	new file:   kont2019/.idea/misc.xml
+#	new file:   kont2019/.idea/modules.xml
+#	new file:   kont2019/.idea/vcs.xml
+#	new file:   kont2019/kont2019.iml
+#	modified:   kont2019/pom.xml
+#	modified:   kont2019/src/bike/Bike.java
+#	modified:   kont2019/src/bike/BikeRental.java
+#	modified:   kont2019/src/bike/DefaultPricePolicy.java
+#	modified:   kont2019/src/bike/GeoLocation.java
+#	modified:   kont2019/src/module-info.java
+#	modified:   kont2019/src/stuff/LambdaUtilities.java
+#	modified:   kont2019/src/stuff/StringBooleanMetaIterator.java
+#	modified:   kont2019/src/stuff/StringBuilderCharacterIterator.java
+#	modified:   kont2019/src/stuff/StringBuilderCharacterIteratorTest.java
+#	modified:   kont2019/svar.md
+#
