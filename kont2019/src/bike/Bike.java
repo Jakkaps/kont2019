@@ -46,6 +46,14 @@ public class Bike {
     this.returnTime = returnTime;
   }
 
+  public LocalDateTime getReturnTime() {
+    return returnTime;
+  }
+
+  public LocalDateTime getTimeRented() {
+    return timeRented;
+  }
+
   private void checkTime(LocalDateTime start, LocalDateTime returnTime) {
     if (start.isAfter(returnTime)){
       throw new IllegalArgumentException("Start time has to be after end time");
@@ -55,25 +63,29 @@ public class Bike {
   public void extendRental(LocalDateTime now, LocalDateTime returnTime){
     checkTime(now, returnTime);
     checkTime(this.timeRented, returnTime);
-
-    if (now.isAfter(this.returnTime)){
-      this.nPenalties++;
-    }
+    checkPenalties(now);
 
     timesExtended++;
     this.returnTime = returnTime;
   }
 
-  public int computePrice(LocalDateTime now) {
-      int extra = timesExtended*5 + nPenalties*10;
-      System.out.println("Extra " + extra);
-      int hourReturn = now.getMinute() > 0 ? now.getHour() + 1 : now.getHour();
-      return (hourReturn - timeRented.getHour())*10 + extra;
+  private void checkPenalties(LocalDateTime now) {
+    if (now.isAfter(this.returnTime)){
+      this.nPenalties++;
+    }
   }
 
-  public void endRental() {
-    this.renter = null;
-    nPenalties = 0;
-    timesExtended = 0;
+  public int getTimesExtended() {
+    return timesExtended;
+  }
+
+  public int getNumberOfPenalties() {
+    return nPenalties;
+  }
+
+  public void endRental(LocalDateTime now) {
+    checkTime(timeRented, now);
+    checkPenalties(now);
+    this.returnTime = now;
   }
 }

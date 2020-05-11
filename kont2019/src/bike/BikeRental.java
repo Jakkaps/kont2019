@@ -11,10 +11,12 @@ public class BikeRental {
 	// TODO: del 1, stations and bikes
 	private Collection<GeoLocation> stations; // Could use array but I want to be able to use streams. Collection is the most general class that satisfies my needs.
 	private Collection<Bike> bikes; // Will need to add and remove elements, but not more. Collection is the most general class that satisfies this.
+	private PriceHandler priceHandler;
 
-	public BikeRental(Collection<GeoLocation> stations, Collection<Bike> bikes) {
+	public BikeRental(Collection<GeoLocation> stations, Collection<Bike> bikes, PriceHandler handler) {
 		this.stations = stations;
 		this.bikes = bikes;
+		this.priceHandler = handler;
 	}
 
 	/*
@@ -100,10 +102,9 @@ public class BikeRental {
 	 */
 	public void returnBike(final Person person, final Bike bike, final LocalDateTime now) {
 		checkCorrespondence(person, bike);
-
-		int price = bike.computePrice(now);
+		bike.endRental(now);
+		int price = priceHandler.compute(bike.getTimeRented(), bike.getReturnTime(), bike.getNumberOfPenalties(), bike.getTimesExtended());
     	System.out.println(price);
-		bike.endRental();
 	}
 
 	public static void main(final String[] args) {
@@ -112,10 +113,11 @@ public class BikeRental {
 		// By the entrance to Realfagsbygget closest to F1: 63.416017, 10.404729
 		// Another spot by the same entrance, closer than 30 meters: 63.416079, 10.404565
 
+
 		GeoLocation loc1 = new GeoLocation(63.416522, 10.403345);
 		GeoLocation loc2 = new GeoLocation(63.416017, 10.404729);
 		Bike bike = new Bike(loc2);
-		BikeRental rental = new BikeRental(Arrays.asList(loc1), Arrays.asList(bike));
+		BikeRental rental = new BikeRental(Arrays.asList(loc1), Arrays.asList(bike), new NormalPriceHandler());
 
 		Person person = new Person();
 		LocalDateTime start = LocalDateTime.of(2020, 5, 11, 12, 0);
@@ -132,6 +134,5 @@ public class BikeRental {
 
 		LocalDateTime finalReturn = LocalDateTime.of(2020, 5, 11, 16, 45);
 		rental.returnBike(person, bike, finalReturn);
-
 	}
 }

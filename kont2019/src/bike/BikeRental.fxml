@@ -29,6 +29,6 @@
 	</HBox>
 	<HBox>
 		<Button onAction="#calculatePriceAction" text="Calculate price"/>
-		<Label text="&lt;here calculated price should appear&gt;"/>
+		<Label fx:id="priceLabel" text="&lt;here calculated price should appear&gt;"/>
 	</HBox>
 </VBox>
