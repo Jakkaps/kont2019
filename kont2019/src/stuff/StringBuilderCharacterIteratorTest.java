@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class StringBuilderCharacterIteratorTest {
 
-	@Test
+    @Test
 	public void testStringBuilderCharacterIterator1() {
 		IteratorTester.testIterator(new StringBuilderCharacterIterator(new StringBuilder("hei")), 'h', 'e', 'i');
 	}

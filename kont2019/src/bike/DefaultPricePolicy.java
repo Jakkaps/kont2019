@@ -4,9 +4,9 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class DefaultPricePolicy implements PricePolicy {
+public class DefaultPricePolicy {//implements PricePolicy {
 
-	protected int pricePrRental = 0, pricePrHour = 10, pricePrExtension = 5, pricePrLate = 10;
+	/*protected int pricePrRental = 0, pricePrHour = 10, pricePrExtension = 5, pricePrLate = 10;
 
 	protected void setPricePrRental(final int pricePrRental) {
 		this.pricePrRental = pricePrRental;
@@ -51,5 +51,5 @@ public class DefaultPricePolicy implements PricePolicy {
 
 	private int computeHours(final LocalDateTime startTime, final LocalDateTime endTime) {
 		return (int) Duration.between(startTime, endTime).toHours() + 1;
-	}
+	}*/
 }
